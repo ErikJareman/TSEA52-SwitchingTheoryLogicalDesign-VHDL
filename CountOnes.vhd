@@ -54,7 +54,7 @@ begin
   end if;
 end process;
 
--- Tillståndsuppdatering
+-- TillstÃ¥ndsuppdatering
   startknapp_plus <= startknapp;
     
 -- LED
@@ -82,7 +82,7 @@ cs2 <= '0' when cs_counter < 16 and round = 1 else '1';
 addr <= to_unsigned(cs_counter, 4);
 
 ------------------------------------------------
--- Sum stämmer med testbänk, fixa sum => BCD sen är uppg klar
+-- Sum stÃ¤mmer med testbÃ¤nk, fixa sum => BCD sen Ã¤r uppg klar
 process(clk, reset)
 begin
   if reset = '1' then         -- Asykron reset
@@ -113,7 +113,7 @@ BCD2 <= BCD2_ref;
 BCD1 <= BCD1_ref;
 BCD0 <= BCD0_ref;
 
-------------------------------------------------
+-----------------------------------------------
 
 end architecture;
 
